@@ -43,6 +43,7 @@ networks:
   app-network:
     driver: bridge
 ```
+There is need to create folder in nginx called logs where you can find error and access logs.
 
 ## NGINX Rate Limiting Setup
 We configure NGINX for rate limiting with detailed setup instructions in the `nginx.conf`:
