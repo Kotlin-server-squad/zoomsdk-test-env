@@ -1,0 +1,14 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPathPattern": "/v2/users/[\\w-]+"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "user-detail.json",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}
+

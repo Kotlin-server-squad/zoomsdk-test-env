@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - "8991:80"  # Map port 80 in the container to port 8080 on the host
+    volumes:
+      - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf  # Mount the custom NGINX config
+      - ./nginx/logs:/var/log/nginx  # Mount a directory for NGINX logs
+    depends_on:
+      - wiremock
+    networks:
+      - app-network
+
+  wiremock:
+    container_name: wiremock
+    image: rodolpheche/wiremock
+    ports:
+      - "8992:8080"  # WireMock listens on port 8080 internally, mapped to 8991 on host
+    volumes:
+      - ./wiremock:/home/wiremock
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

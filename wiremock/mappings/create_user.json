@@ -1,0 +1,14 @@
+{
+    "request": {
+        "method": "POST",
+        "urlPath": "/v2/users"
+    },
+    "response": {
+        "status": 201,
+        "bodyFileName": "user-create-response.json",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}
+

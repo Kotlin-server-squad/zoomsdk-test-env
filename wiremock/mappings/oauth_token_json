@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "POST",
+        "urlPath": "/v2/oauth/token"
+    },
+    "response": {
+        "status": 201,
+        "bodyFileName": "oauth_response.json",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

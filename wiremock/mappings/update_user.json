@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "PATCH",
+        "urlPathPattern": "/v2/users/[\\w-]+"
+    },
+    "response": {
+        "status": 204,
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}
+

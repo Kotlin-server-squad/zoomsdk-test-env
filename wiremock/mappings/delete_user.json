@@ -1,0 +1,14 @@
+{
+    "request": {
+        "method": "DELETE",
+        "urlPathPattern": "/v2/users/[\\w-]+"
+    },
+    "response": {
+        "status": 200,
+        "body": "User deleted successfully",
+        "headers": {
+            "Content-Type": "text/plain"
+        }
+    }
+}
+
